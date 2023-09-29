@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myschedule</title>
+    <style>
+        /* using universal tag which applies all the code  */
+    * {
+        font-style: unset;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* using table to style entire table  */
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        border-color: red;
+        width:80%;
+        
+    }
+
+    /* styling the colours of the table iving by color grey for even numbered lines  */
+    tr.shade {
+    background-color: #f2f2f2;
+    
+    }
+
+    /* styling the colours of the table giving bg color white for odd numbered lines */
+    tr:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+    }
+
+    /* this is for the first section of the table giving bg color and text color */
+    tr:nth-child(1) {
+    background-color: #d12525;
+    color: white;
+    }
+
+    /* this syntax is used to allign the table to the center  */
+    table.center{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* this is user for the height of the boxes */
+    th{
+        height: 40px;
+    }
+
+    /* flex statements aligning in the same order */
+    #name{  
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    /* this is for the top light user ,student , course names styles */
+    #name > div:nth-child(2) {
+        margin-top: 80px;
+        margin-left: 500px;
+        margin-right: 300px;
+        color: #d91818;
+        font-size: small;
+        font-style: oblique;  
+        float: left;
+ 
+    }
+
+    /* this is a font style for the time table  */
+    div >.time {
+        font-style: italic;
+    }
+
+
+    /* aligning the kalvium image by this syntax */
+    #name > div:nth-child(1) {
+        margin-left: 80px;
+    }
+
+    /* by this css selectors we are removing the border lines of table  */
+    table, tr, td, th{
+    padding: 10px;
+    margin: auto;
+    border: none;
+    }
+    /* giving color to the bottom of the table  */
+    tr.bottom {
+        border-bottom: 3px solid red;
+    }
+    .lunch{
+    width: 10px;
+    background-color: white;
+    writing-mode: vertical-lr;
+    text-align: center;
+    text-orientation: upright;
+    font-size: 30px;
+    }
+
+
+    </style>
+</head>
+
+   
+<body style="background-color: rgb(255, 225, 225);" >
+    <div id="name">
+        <div><img src="https://kalvium.com/wp-content/uploads/2023/04/Kalvium-Logo-SVG.svg" alt="kalvium_logo" height="50px" style="margin: 70px;"></div>
+        <div style="display:flex">   
+            <div style="display: flex;">
+                <img src="assets/red_user_emoji-removebg-preview.png" alt="user_logo" width="30px" align="right" style="margin: 10px" height="30px" ><h2 class="Students">Students&nbsp&nbsp</h2>
+            </div>        
+        <div class="Students" ><h2>Course</h2></div>
+        </div>
+    
+    </div>
+    <div>
+        <h2></h2>
+    </div>
+    <div>
+        <table class="center">
+            <h2 align="center" class="time">TIME TABLE📆</h2>
+            <tr>
+                <th>Day/period</th>
+                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp I <br> &nbsp 9am-10am</th>
+                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp II <br> 10am-11am </th>
+                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp III <br> 11:15am- <br> 12:15pm</th>
+                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp IV <br>  12:15am- <br> 1:15pm</th>
+                <th>1:15pm- <br> 2:00pm </th>
+                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp V <br>2:00pm- <br> 5:00pm</th>
+                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp VI <br>5:30pm- <br> 6:30pm</th>
+            </tr>
+            <tr class="shade">
+                <th>Monday</th>
+                <td>&nbsp&nbsp&nbspsubject 1</td>
+                <td>subject 2</td>
+                <td>subject 3</td>
+                <td>subject 4</td>
+                <td rowspan="6" class="lunch" align="middle"  style="font-size: large;"><STROng>LUNCH
+                </STROng></td>
+                <td>subject 6</td>
+                <td>subject 7</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>&nbsp&nbsp&nbspsubject 1</td>
+                <td>subject 2</td>
+                <td>subject 3</td>
+                <td>subject 4</td>
+                <td>subject 6</td>
+                <td>subject 7</td>
+            </tr>
+            <tr class="shade">
+                <th>Wednesday</th>
+                <td>&nbsp&nbsp&nbspsubject 1</td>
+                <td>subject 2</td>
+                <td>subject 3</td>
+                <td>subject 4</td>
+                <td>subject 6</td>
+                <td>subject 7</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>&nbsp&nbsp&nbspsubject 1</td>
+                <td>subject 2</td>
+                <td>subject 3</td>
+                <td>subject 4</td>
+                <td>subject 6</td>
+                <td>subject 7</td>
+            </tr>
+            <tr class="shade">
+                <th>Friday</th>
+                <td>&nbsp&nbsp&nbspsubject 1</td>
+                <td>subject 2</td>
+                <td>subject 3</td>
+                <td>subject 4</td>
+                <td>subject 6</td>
+                <td>subject 7</td>
+            </tr>
+            <tr class="bottom">
+                <th>Saturday</th>
+                <td>&nbsp&nbsp&nbspsubject 1</td>
+                <td>subject 2</td>
+                <td>subject 3</td>
+                <td>subject 4</td>
+                <td>subject 6</td>
+                <td>subject 7</td>
+                
+            </tr>
+
+
+
+
+
+
+        </table>
+        <div class="hr"><h1></h1></div>
+    
+
+    </div>
+</body>
+</html>
